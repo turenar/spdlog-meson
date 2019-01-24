@@ -1,7 +1,7 @@
 project('spdlog', 'cpp', version : '1.3.1', license: 'MIT',
         default_options : ['cpp_std=c++11'])
 
-inc = include_directories('include')
+inc = include_directories('include', is_system: true)
 
 thread_dep = dependency('threads')
 
